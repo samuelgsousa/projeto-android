@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+@font-face {
+    font-family: 'genos';
+    src: url('fontes/genos.ttf') format('truetype');
+}
+header{
+    background-image: linear-gradient(to bottom, #2BC265, #395C46);
+    color: white;
+    text-align: center;   
+    margin-top:-8px; 
+    padding: 3px 3px 8px 3px;
+    border:0px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+header > h1{
+    font-family: 'genos', sans-serif;
+    color: white;
+}
+header > nav{
+    text-align: left; 
+}
+header > nav > a {
+    padding: 8px 5px 5px 5px;
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: white;
+    border-radius: 5px;
+}
+
+header > nav > a:hover {
+    color: #2a4234;
+    background-color: #82dfa6;
+}
+
+
+/*-----------A partir daqui é o Body---------------*/
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+strong {
+    color: #487258;
+}
+main > article> p > a{
+    background-color: #81d8a2;
+    color: #2a4234;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+main > article > section > p > a{
+    color: #2a4234;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li{}
+body{
+    background-color: #81d8a2;
+}
+h1,h2{
+    font-family: 'idroid';
+    color: #2d6946;
+}
+h2{
+    background-image: linear-gradient(to right, #baf0cf 15%, transparent 60%);
+}
+main{
+    background-color: white;
+    margin: 0px 30px 0px 30px;
+    padding: 18px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+main > h1{
+    margin: 0px;
+}
+#imgandroid{
+    text-align: center;
+}
+.boxVideo {
+   
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+    border: 40px solid #2a4234;
+    margin: 20px -20px 20px -20px;
+}
+.boxVideo > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*Explicação do BoxVideo: https://www.kadunew.com/blog/css/como-deixar-seus-videos-responsivos*/
+
+.title-bar{
+    background-color: #2a4234; /* Cor de fundo para a barra do título */
+    color: white; /* Cor do texto do título */
+    padding: 10px;
+    margin: -20px -20px 20px -20px; /* Estão negativas para que o h1 não se afaste das bordas de section*/
+
+}
+
+.title-bar > h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif ;
+}
+section {
+    text-align: left;
+    background-color: #82dfa6;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    overflow: hidden; /*essa tag oculta tudo que passar para fora do elemento. neste caso, ocultou toda a parte de title-bar que passaria para fora*/
+
+}
+
+ul {
+    list-style-image: url('vezinho.png');
+    display: inline-block;
+    padding: 20px;
+    padding-right: 170px;
+}
+
+footer{
+    margin-top: 8px;
+    background-color: #2a4234;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+footer > p {
+    margin: 4px;
+}
